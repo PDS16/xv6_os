@@ -1,0 +1,22 @@
+---------Testcase: wait2------Scheduler: DEFAULT-------------------------------------
+*Case1: Parent has no children*
+wait2 status: -1
+*Case2: Parent has children*
+Child 4 created
+Child 5 created
+Child 5 finished
+Child pid: 5 exited with Status: 5, Waiting Time: 7622, Run Time: 7621
+Child 4 finished
+Child pid: 4 exited with Status: 4, Waiting Time: 7939, Run Time: 7764
+
+
+---------Testcase: oddeve------Scheduler: The lets-get-even policy!-------------------------------------
+*Case1: Parent has no children*
+wait2 status: -1
+*Case2: Parent has children*
+Child 4 created
+Child 5 created
+Child 4 finished
+Child pid: 4 exited with Status: 4, Waiting Time: 3919, Run Time: 7743
+Child 5 finished
+Child pid: 5 exited with Status: 5, Waiting Time: 8009, Run Time: 7774
